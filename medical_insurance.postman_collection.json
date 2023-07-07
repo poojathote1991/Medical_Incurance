@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "9c1599b1-bb69-4b8f-b3bd-c59e8a139aa8",
+		"name": "medical_insurance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28205121"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5005/medical_insurance/predict_charges",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "45",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "bmi",
+							"value": "25.223",
+							"type": "text"
+						},
+						{
+							"key": "children",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "smoker",
+							"value": "no",
+							"type": "text"
+						},
+						{
+							"key": "region",
+							"value": "northeast",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5005/medical_insurance/predict_charges",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5005",
+					"path": [
+						"medical_insurance",
+						"predict_charges"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
